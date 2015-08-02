@@ -1,0 +1,26 @@
+<table>
+  <tr>
+    <td>City</td>
+    <td><%= @weather['name'] %></td>
+  </tr>
+  <tr>
+    <td>Country</td>
+    <td><%= @weather['sys']['country'] %></td>
+  </tr>
+  <tr>
+    <td colspan="2">Weather</td>
+  </tr>
+  <tr>
+    <td>Temperature</td>
+    <td><%= @weather['main']['temp'] %> C</td>
+  </tr>
+  <tr>
+    <td>Pressure</td>
+    <td><%= @weather['main']['pressure'] %> hPa</td>
+  </tr>
+  <tr>
+    <td>Humidity</td>
+    <td><%= @weather['main']['humidity'] %> %</td>
+  </tr>
+</table>
+

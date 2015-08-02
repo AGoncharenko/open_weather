@@ -1,0 +1,7 @@
+<%= render 'table' %>
+<br>
+<%= form_tag get_weather_path, method: 'post', remote: true do %>
+  <%= text_field_tag :city %>
+  <%= country_select(nil, :country, priority_countries: ["DE", "UA", "US"]) %>
+  <%= button_tag :submit %>
+<% end %>

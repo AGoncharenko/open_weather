@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/weather?lat=45&lon=90&units=metric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openweathermap.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 01 Aug 2015 22:54:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Source:
+      - back
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: |
+        {"coord":{"lon":91.23,"lat":44.77},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04n"}],"base":"stations","main":{"temp":17.82,"pressure":874.36,"humidity":48,"temp_min":17.82,"temp_max":17.82,"sea_level":1024.17,"grnd_level":874.36},"wind":{"speed":1.56,"deg":304.5},"clouds":{"all":92},"dt":1438469648,"sys":{"message":0.0154,"country":"CN","sunrise":1438382480,"sunset":1438435242},"id":1529595,"name":"Beishanyanchi","cod":200}
+    http_version: 
+  recorded_at: Sat, 01 Aug 2015 22:54:05 GMT
+recorded_with: VCR 2.9.3

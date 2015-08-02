@@ -1,0 +1,16 @@
+== Welcome to the open_weather App
+
+The openweather application is built on:
+ * Ruby 2.2.2
+ * Rails 4.2.3
+ * sqlite3
+
+== To run tests
+
+ rake cucumber
+ rspec
+ VCR is used to stub api calls
+
+== Details
+
+  API calls are cached into memory

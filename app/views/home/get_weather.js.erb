@@ -1,0 +1,5 @@
+$('p').remove();
+$('table').html("<%= j render(partial: 'table') %>");
+<% if @city != @weather['name'].downcase %>
+  $('form').before("<p>Did you mean <%= @weather['name'] %> in <%= @weather['sys']['country'] %></p>");
+<% end %>

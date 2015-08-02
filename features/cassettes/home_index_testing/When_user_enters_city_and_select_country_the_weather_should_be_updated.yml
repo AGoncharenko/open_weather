@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/weather?q=Berlin,DE&units=metric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openweathermap.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 02 Aug 2015 10:20:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Source:
+      - redis
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: |
+        {"coord":{"lon":13.41,"lat":52.52},"weather":[{"id":503,"main":"Rain","description":"very heavy rain","icon":"10d"}],"base":"stations","main":{"temp":29.56,"pressure":1019,"humidity":41,"temp_min":26,"temp_max":36.67},"visibility":10000,"wind":{"speed":2.1},"rain":{"1h":22.86},"clouds":{"all":0},"dt":1438508731,"sys":{"type":1,"id":4892,"message":0.0109,"country":"DE","sunrise":1438486054,"sunset":1438541795},"id":2950159,"name":"Berlin","cod":200}
+    http_version: 
+  recorded_at: Sun, 02 Aug 2015 10:20:47 GMT
+recorded_with: VCR 2.9.3

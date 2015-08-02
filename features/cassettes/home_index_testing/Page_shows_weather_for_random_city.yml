@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/weather?lat=45&lon=90&units=metric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openweathermap.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 02 Aug 2015 10:16:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Source:
+      - back
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: |
+        {"coord":{"lon":91.23,"lat":44.77},"weather":[{"id":800,"main":"Clear","description":"Sky is Clear","icon":"01d"}],"base":"cmc stations","main":{"temp":29.11,"pressure":908.13,"humidity":29,"temp_min":29.11,"temp_max":29.11,"sea_level":1021.08,"grnd_level":908.13},"wind":{"speed":3.41,"deg":291.503},"clouds":{"all":0},"dt":1438510169,"sys":{"message":0.0034,"country":"CN","sunrise":1438468912,"sunset":1438521606},"id":1529595,"name":"Beishanyanchi","cod":200}
+    http_version: 
+  recorded_at: Sun, 02 Aug 2015 10:16:11 GMT
+recorded_with: VCR 2.9.3
